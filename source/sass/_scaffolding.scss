@@ -1,12 +1,12 @@
 body {
-  min-width: 320px;
+  min-width: 375px;
   margin: 0;
   padding: 0;
 
   font-family: $main-fonts;
   font-size: $main-font-size;
   font-weight: $main-font-weight;
-  color: $main-color-text;
+  color: $black;
 
   background-color: #ffffff;
 
@@ -18,18 +18,8 @@ html { box-sizing: border-box; }
 
 a {
   text-decoration: none;
-  color: $main-color-text;
+  color: $black;
 }
-
-
-img {
-  max-width: 100%;
-  height: auto;
-
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
 
 .visually-hidden {
   position: absolute;
@@ -42,29 +32,4 @@ img {
 
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-
-.container {
-  margin: 0 auto;
-  max-width: $desktop-width-container;
-  padding: 0 20px;
-}
-
-@media (max-width: $desktop-width) {
-  .container {
-    max-width: $laptop-width-container;
-  }
-}
-
-@media (max-width: $laptop-width) {
-  .container {
-    max-width: $tablet-width-container;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .container {
-    max-width: $mobile-width-container;
-  }
 }
