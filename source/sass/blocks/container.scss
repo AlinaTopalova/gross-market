@@ -7,15 +7,15 @@
 @media (max-width: $tablet-breakpoint) {
   .container {
     width: $tablet-width;
-    margin: 0 auto;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 @media (max-width: $mobile-breakpoint) {
   .container {
-    width: 375px;
-    margin: 0 auto;
-    padding: 0 14px;
+    width: $mobile-width;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 }

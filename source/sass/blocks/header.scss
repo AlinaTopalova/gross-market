@@ -14,10 +14,6 @@
 
 /*header__logo*/
 
-.header__logo {
-  flex-grow: 1;
-}
-
 .header__logo-mobile {
   display: none;
   @media (max-width: $mobile-breakpoint) {
@@ -37,7 +33,7 @@
   position: relative;
   margin: 0;
   margin-right: 32px;
-  z-index: 10;
+  margin-left: auto;
   
   @media (max-width: $mobile-breakpoint) {
     font-size: 0;

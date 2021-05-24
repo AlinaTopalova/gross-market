@@ -1,0 +1,16 @@
+.vacancies__catalog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card__wrap {
+  width: 350px;
+  height: 480px;
+  background-color: $background-color;
+  border-radius: 8px;
+}
+
+.card__img {
+  object-fit: contain;
+}

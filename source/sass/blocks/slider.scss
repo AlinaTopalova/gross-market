@@ -42,14 +42,26 @@
   border: none;
 }
 
-.slider__button-preview {
-  background-image: url("../../img/slider/preview-button-disable.svg");
+.slider__button-back {
+  background-image: url("../img/slider/preview-button-disable.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px left 13px;
+}
+
+.slider__button-back--active {
+  background-image: url("../img/slider/preview-button-active.svg");
   background-repeat: no-repeat;
   background-position: top 16px left 13px;
 }
 
 .slider__button-next {
-  background-image: url("../../img/slider/next-button-active.svg");
+  background-image: url("../img/slider/next-button-disable.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px left 19px;
+}
+
+.slider__button-next--active {
+  background-image: url("../img/slider/next-button-active.svg");
   background-repeat: no-repeat;
   background-position: top 16px left 19px;
 }
