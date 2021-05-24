@@ -1,9 +1,19 @@
 .vacancies {
   padding-top: 75px;
+  padding-bottom: 72px;
+  overflow: hidden;
 }
 
 .vacancies__title {
   font-size: 32px;
   margin: 0;
   margin-bottom: 32px;
+}
+
+.vacancies__catalog-list {
+  display: flex;
+}
+
+.vacancies__catalog-item {
+  margin-right: 30px;
 }
