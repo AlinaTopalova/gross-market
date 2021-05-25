@@ -1,4 +1,5 @@
 .vacancies {
+  position: relative;
   padding-top: 75px;
   padding-bottom: 72px;
   overflow: hidden;
@@ -6,8 +7,11 @@
 
 .vacancies__title {
   font-size: 32px;
-  margin: 0;
-  margin-bottom: 32px;
+  margin: 0 0 34px 0;
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 24px;
+  }
 }
 
 .vacancies__catalog-list {
@@ -16,4 +20,47 @@
 
 .vacancies__catalog-item {
   margin-right: 30px;
+}
+
+/*vacancies__button*/
+
+.vacancies__button {
+  position: absolute;
+  top: 71px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+
+.vacancies__button-back {
+  left: 1196px;
+  background-image: url("../img/slider/preview-button-disable.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px left 13px;
+}
+
+.vacancies__button-back--active {
+  background-image: url("../img/slider/preview-button-active.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px left 13px;
+}
+
+.vacancies__button-next {
+  left: 1240px;
+  background-image: url("../img/slider/next-button-disable.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px left 19px;
+}
+
+.vacancies__button-next--active {
+  background-image: url("../img/slider/next-button-active.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px left 19px;
 }

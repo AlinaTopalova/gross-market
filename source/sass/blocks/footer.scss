@@ -102,28 +102,30 @@
 /*copyright*/
 
 .footer__copyright-wrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  column-gap: 90px;
   width: 1110px;
   margin: 0 auto;
-  padding-right: 24px;
 
   @media (max-width: $tablet-breakpoint) {
-    justify-content: space-between;
+    grid-template-columns: 320px 1fr;
+    column-gap: 40px;
     width: 690px;
-    padding-right: 27px;
   }
 
   @media (max-width: $mobile-breakpoint) {
+    display: flex;
     flex-direction: column;
     width: 375px;
     padding-left: 14px;
+    padding-right: 14px;
   }
 }
 
 .footer__copyright-caption {
   font-size: 14px;
   margin: 0;
-  margin-right: 428px;
 
   @media (max-width: $tablet-breakpoint) {
     margin-right: 0;
