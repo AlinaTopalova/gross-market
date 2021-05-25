@@ -1,7 +1,6 @@
 .vacancies {
   position: relative;
-  padding-top: 75px;
-  padding-bottom: 72px;
+  padding: 75px 0 72px;
   overflow: hidden;
 }
 
@@ -16,9 +15,13 @@
 
 .vacancies__catalog-list {
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .vacancies__catalog-item {
+  position: relative;
   margin-right: 30px;
 }
 

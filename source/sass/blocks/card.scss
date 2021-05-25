@@ -1,14 +1,4 @@
-.vacancies__catalog-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.vacancies__catalog-item {
-  position: relative;
-}
-
-.card__wrap {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,11 +63,11 @@
 }
 
 .card__descr-content {
+  align-self: center;
   font-size: 18px;
   line-height: 22px;
   width: 290px;
   margin: 0;
-  align-self: center;
 
   @media (max-width: $tablet-breakpoint) {
     width: 252px;
