@@ -1,7 +1,13 @@
 .vacancies {
   position: relative;
-  padding: 75px 0 72px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   overflow: hidden;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 .vacancies__title {
@@ -21,8 +27,11 @@
 }
 
 .vacancies__catalog-item {
-  position: relative;
   margin-right: 30px;
+}
+
+.vacancies__catalog-item:hover .card__descr {
+  display: flex;
 }
 
 /*vacancies__button*/

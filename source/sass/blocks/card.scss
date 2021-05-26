@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,8 +77,4 @@
   @media (max-width: $mobile-breakpoint) {
     width: 204px;
   }
-}
-
-.vacancies__catalog-item:hover .card__descr {
-  display: flex;
 }
