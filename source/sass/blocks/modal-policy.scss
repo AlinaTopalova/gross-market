@@ -67,18 +67,18 @@
   font-size: 18px;
   font-weight: 500;
   margin: 0 0 24px;
+  line-height: 30px;
 }
 
 .modal-policy__item-descr {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0 0 24px;
+  line-height: 22px;
 }
 
 .modal-policy__item-fn {
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0;
+  margin: 24px 0 0 0;
   color: $basic-dark-gray;
 }
 
@@ -88,7 +88,7 @@
   height: 24px;
   top: 32px;
   right: 32px;
-  background: none;
+  background-color: transparent;
   border: none;
   background-image: url("../img/modal/close-button.svg");
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@
   @media (max-width: $mobile-breakpoint) {
     padding-left: 14px;
   }
-} 
+}
 
 .modal-policy__header--show {
   display: flex;

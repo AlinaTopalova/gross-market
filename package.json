@@ -1,9 +1,8 @@
 {
-  "name": "cat-energy-22",
+  "name": "gross-market",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Тестовое задание 'гросс-маркет'",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
     "browser-sync": "2.26.14",
     "del": "6.0.0",
@@ -45,5 +44,8 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "editorconfig": "^0.15.3"
   }
 }

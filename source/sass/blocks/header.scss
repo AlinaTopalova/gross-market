@@ -1,3 +1,7 @@
+.header__wrap {
+  background: $basic-gray;
+}
+
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -12,6 +16,23 @@
   }
 }
 
+.header--form {
+  padding-top: 34px;
+  padding-bottom: 29px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-bottom: 35px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 35px;
+  }
+}
+
+
+
 /*header__logo*/
 
 .header__logo-mobile {
@@ -22,6 +43,7 @@
 }
 
 .header__logo-desktop {
+  display: block;
   @media (max-width: $mobile-breakpoint) {
     display: none;
   }
@@ -34,11 +56,15 @@
   margin: 0;
   margin-right: 32px;
   margin-left: auto;
-  
+
   @media (max-width: $mobile-breakpoint) {
     font-size: 0;
     padding: 20px 20px;
   }
+}
+
+.header--form .header__phone {
+  display: none;
 }
 
 .header__phone a::before {
@@ -60,4 +86,20 @@
   @media (max-width: $mobile-breakpoint) {
     display: none;
   }
+}
+
+.header--form .header__button {
+  background-color: transparent;
+  padding-left: 12px;
+  padding-right: 12px;
+  min-height: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/icon/close.svg");
+  background-repeat: no-repeat;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: block;
+  }
+
 }

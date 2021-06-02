@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>gross-market</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/EuclidCircularB-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="header__wrap">
+      <header class="header header--form container">
+        <a href="index.html" class="header__logo">
+          <img class="header__logo-desktop" src="img/logo/logo.svg" width="245" height="41" alt="Логотип Гросс Маркет">
+          <img class="header__logo-mobile" src="img/logo/logo_mobile.svg" width="185" height="30" alt="Логотип Гросс Маркет">
+        </a>
+        <p class="header__phone">
+          <a href="tel:+79264331416">+7 (926) 433-14-16</a>
+        </p>
+        <a href="index.html" class="button header__button"></a>
+      </header>
+    </div>
+    <main>
+      <section class="form container">
+        <h1 class="form__title">Работа твоей мечты</h1>
+        <form class="form__questionary" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form__user">
+            <label for="vacancy">Вакансия *</label>
+            <select class="form__vacancy" name="select" size="1" id="vacancy">
+              <option selected value="product-expert">товаровед</option>
+              <option value="driver">водитель</option>
+              <option value="baker">пекарь</option>
+              <option value="cashier">кассир</option>
+              <option value="seller">продавец</option>
+              <option value="cook">повар</option>
+              <option value="receiver">приёмщик</option>
+            </select>
+            <div class="form__name-wrap form__field-invalid">
+              <label for="name">ФИО *</label>
+              <input class="form__name" id="name" type="text" name="name"
+              placeholder="Константиновский Константин Александрович">
+              <p>поле не должно оставаться пустым</p>
+            </div>
+            <div class="form__user-data-wrap">
+              <fieldset class="form__birthday form__field-invalid">
+                <label>Дата рождения *
+                <input class="form__birthday-input" type="date" name="birthday"
+                value="2002-07-28"></label>
+                <p>укажите дату рождения</p>
+              </fieldset>
+              <fieldset class="form__gender">
+                <legend>Пол</legend>
+                <ul class="form__gender-list">
+                  <li class="form__gender-item">
+                    <input class="form__gender-radio visually-hidden" type="radio"
+                    name="gender-kind" value="men" id="men" checked>
+                      <label for="men">мужской</label>
+                  </li>
+                  <li class="form__gender-item">
+                    <input class="form__gender-radio visually-hidden" type="radio"
+                    name="gender-kind" value="woman" id="woman" checked>
+                      <label for="woman">женский</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <fieldset class="form__contacts">
+              <ul class="form__contacts-list">
+                <li class="form__contacts-item form__field-invalid">
+                  <label for="phone">Контактный телефон *</label>
+                  <input class="form__contacts-input form__contacts-phone" id="phone" type="tel" placeholder="+7 (" required>
+                  <p>поле не заполнено до конца</p>
+                </li>
+                <li class="form__contacts-item">
+                  <label for="email">Электронная почта</label>
+                  <input class="form__contacts-input form__contacts-email" id="email" type="email" placeholder="example@mail.com">
+                  <p>поле заполнено не корректно</p>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__comment">
+              <label class="form__comment-title">Резюме</label>
+              <textarea class="form__comment-input" name="comment" placeholder=""></textarea>
+            </fieldset>
+            <input type="file" id="file" name="file" class="form__upload-file visually-hidden" accept=".jpg, .jpeg, .doc, .docx, .pdf">
+            <label class="form__upload-label" for="file">выберите  или перетащите файл</label>
+            <h3 class="form__captcha-caption">Капча</h3>
+            <div class="form__captcha-wrap">
+              <input class="form__captcha visually-hidden" type="checkbox" id="recaptcha" name="captcha" value="not-robot" checked>
+              <label for ="captcha" class="form__captcha-label">я не робот</label>
+              <p class="form__captcha-description">* поля для обязательного заполнения</p>
+            </div>
+            <fieldset class="form__confirm">
+              <input class="form__confirm-checkbox visually-hidden" type="checkbox" id="confirm" name="confirm" value="confirm" checked>
+              <label for ="confirm" class="form__confirm-label">я подтверждаю согласие на обработку персональных данных и принимаю условия рассмотрения обращений *</label>
+            </fieldset>
+            <button class="button form__button form__button--active" type="submit">отправить</button>
+          </div>
+
+        </form>
+        <div class="form__about-company">
+          <h2 class="form__target-title">Наша суперцель</h2>
+          <ul class="form__target-list">
+            <li class="form__target-item">— стать любимым магазином для каждой российской семьи.</li>
+            <li class="form__target-item">Сотни тысяч наших сотрудников ежедневно работают над её достижением.</li>
+            <li class="form__target-item">Мы уверены, что в ближайшие годы достигнем этого и будет здорово, если вместе с тобой.</li>
+          </ul>
+          <div class="form__phone"><a href="tel:+79264331416">+7 (926) 433-14-16</a></div>
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer footer--form">
+      <div class="footer__wrap">
+        <a href="#" class="footer__logo">
+          <img class="footer__logo-desktop" src="img/logo/logo.svg" width="245" height="41" alt="Логотип Гросс Маркет">
+          <img class="footer__logo-mobile" src="img/logo/logo_mobile.svg" width="185" height="30" alt="Логотип Гросс Маркет">
+        </a>
+        <span class="footer__share">поделиться</span>
+        <ul class="footer__link-list">
+          <li class="footer__link-item">
+            <a href="#" class="footer__link--facebook">facebook</a>
+            </li>
+          <li class="footer__link-item">
+            <a href="#" class="footer__link--vk">vk</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright-wrap">
+        <p class="footer__copyright-caption">© Гросс маркет 2020</p>
+        <a href="#" class="footer__copyright-content">Политика обработки персональных данных</a>
+        <p class="footer__copyright-caption--duplicate">© Гросс маркет 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>
