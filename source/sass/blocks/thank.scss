@@ -1,0 +1,128 @@
+.thank {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+  padding-bottom: 180px;
+
+  @media (max-width: $tablet-breakpoint) {
+    flex-direction: column;
+    padding-bottom: 72px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+
+/*thank__invitation*/
+
+.thank__invitation {
+  width: 540px;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 690px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 346px;
+  }
+}
+
+.thank__invitation-caption {
+  margin: 0 0 48px;
+  font-size: 72px;
+  line-height: 66px;
+  font-weight: 500;
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 48px;
+    line-height: 44px;
+    margin-bottom: 32px;
+  }
+}
+
+.thank__invitation-content {
+  margin: 0;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+}
+
+.thank__invitation-content:not(:nth-last-child(1)) {
+  margin-bottom: 24px;
+}
+
+.thank__invitation-content--descr {
+  position: relative;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 54px;
+    top: 0;
+    left: 0;
+    background-color: $basic-yellow;
+
+    @media (max-width: $tablet-breakpoint) {
+      height: 36px;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      height: 72px;
+    }
+  }
+}
+
+/*thank__contacts*/
+
+.thank__contacts {
+  padding-top: 115px;
+
+  @media (max-width: $tablet-breakpoint) {
+    padding-top: 72px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-top: 48px;
+  }
+}
+
+.thank__contacts-caption {
+  margin: 0 0 32px;
+  font-size: 32px;
+  line-height: 41px;
+  font-weight: 500;
+
+  @media (max-width: $mobile-breakpoint) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.thank__contacts-phone {
+  width: 445px;
+  min-height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: $basic-gray;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+
+  @media (max-width: $tablet-breakpoint) {
+    width: 690px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 346px;
+  }
+}

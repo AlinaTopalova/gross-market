@@ -25,9 +25,9 @@
       <section class="form container">
         <h1 class="form__title">Работа твоей мечты</h1>
         <form class="form__questionary" method="post" action="https://echo.htmlacademy.ru">
-          <div class="form__user">
-            <label for="vacancy">Вакансия *</label>
-            <select class="form__vacancy" name="select" size="1" id="vacancy">
+          <div class="form__vacancy-wrap">
+            <label class="form__field-label" for="vacancy">Вакансия *</label>
+            <select class="form__input form__vacancy-input" name="select" size="1" id="vacancy">
               <option selected value="product-expert">товаровед</option>
               <option value="driver">водитель</option>
               <option value="baker">пекарь</option>
@@ -36,68 +36,69 @@
               <option value="cook">повар</option>
               <option value="receiver">приёмщик</option>
             </select>
-            <div class="form__name-wrap form__field-invalid">
-              <label for="name">ФИО *</label>
-              <input class="form__name" id="name" type="text" name="name"
-              placeholder="Константиновский Константин Александрович">
-              <p>поле не должно оставаться пустым</p>
-            </div>
-            <div class="form__user-data-wrap">
-              <fieldset class="form__birthday form__field-invalid">
-                <label>Дата рождения *
-                <input class="form__birthday-input" type="date" name="birthday"
-                value="2002-07-28"></label>
-                <p>укажите дату рождения</p>
-              </fieldset>
-              <fieldset class="form__gender">
-                <legend>Пол</legend>
-                <ul class="form__gender-list">
-                  <li class="form__gender-item">
-                    <input class="form__gender-radio visually-hidden" type="radio"
-                    name="gender-kind" value="men" id="men" checked>
-                      <label for="men">мужской</label>
-                  </li>
-                  <li class="form__gender-item">
-                    <input class="form__gender-radio visually-hidden" type="radio"
-                    name="gender-kind" value="woman" id="woman" checked>
-                      <label for="woman">женский</label>
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
-            <fieldset class="form__contacts">
-              <ul class="form__contacts-list">
-                <li class="form__contacts-item form__field-invalid">
-                  <label for="phone">Контактный телефон *</label>
-                  <input class="form__contacts-input form__contacts-phone" id="phone" type="tel" placeholder="+7 (" required>
-                  <p>поле не заполнено до конца</p>
+          </div>
+          <div class="form__name-wrap form__field-invalid">
+            <label class="form__field-label" for="name">ФИО *</label>
+            <input class="form__input form__name-input" id="name" type="text" name="name"
+            placeholder="Константиновский Константин Александрович">
+            <p>поле не должно оставаться пустым</p>
+          </div>
+          <div class="form__user-data-wrap">
+            <div class="form__birthday-wrap form__field-invalid">
+              <label class="form__field-label">Дата рождения *
+              <input class="form__input form__birthday-input" type="date" name="birthday"
+              value="2002-07-28"></label>
+              <p>укажите дату рождения</p>
+              </div>
+            <div class="form__gender-wrap">
+              <legend>Пол</legend>
+              <ul class="form__gender-list">
+                <li class="form__gender-item">
+                  <input class="form__gender-radio visually-hidden" type="radio"
+                  name="gender-kind" value="men" id="men" checked>
+                    <label for="men">мужской</label>
                 </li>
-                <li class="form__contacts-item">
-                  <label for="email">Электронная почта</label>
-                  <input class="form__contacts-input form__contacts-email" id="email" type="email" placeholder="example@mail.com">
-                  <p>поле заполнено не корректно</p>
+                <li class="form__gender-item">
+                  <input class="form__gender-radio visually-hidden" type="radio"
+                  name="gender-kind" value="woman" id="woman" checked>
+                    <label for="woman">женский</label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="form__comment">
-              <label class="form__comment-title">Резюме</label>
-              <textarea class="form__comment-input" name="comment" placeholder=""></textarea>
-            </fieldset>
+            </div>
+          </div>
+          <div class="form__contacts-wrap">
+            <ul class="form__contacts-list">
+              <li class="form__contacts-item form__field-invalid">
+                <label class="form__field-label" for="phone">Контактный телефон *</label>
+                <input class="form__contacts-input form__contacts-phone" id="phone" type="tel" placeholder="+7 (" required>
+                <p>поле не заполнено до конца</p>
+              </li>
+              <li class="form__contacts-item">
+                <label class="form__field-label" for="email">Электронная почта</label>
+                <input class="form__contacts-input form__contacts-email" id="email" type="email" placeholder="example@mail.com">
+                <p>поле заполнено не корректно</p>
+              </li>
+            </ul>
+          </div>
+          <div class="form__comment-wrap">
+            <label class="form__field-label form__comment-title">Резюме</label>
+            <textarea class="form__input form__comment-input" name="comment" placeholder=""></textarea>
+          </div>
+          <div class="form__upload-file-wrap">
             <input type="file" id="file" name="file" class="form__upload-file visually-hidden" accept=".jpg, .jpeg, .doc, .docx, .pdf">
             <label class="form__upload-label" for="file">выберите  или перетащите файл</label>
-            <h3 class="form__captcha-caption">Капча</h3>
-            <div class="form__captcha-wrap">
-              <input class="form__captcha visually-hidden" type="checkbox" id="recaptcha" name="captcha" value="not-robot" checked>
-              <label for ="captcha" class="form__captcha-label">я не робот</label>
-              <p class="form__captcha-description">* поля для обязательного заполнения</p>
-            </div>
-            <fieldset class="form__confirm">
-              <input class="form__confirm-checkbox visually-hidden" type="checkbox" id="confirm" name="confirm" value="confirm" checked>
-              <label for ="confirm" class="form__confirm-label">я подтверждаю согласие на обработку персональных данных и принимаю условия рассмотрения обращений *</label>
-            </fieldset>
-            <button class="button form__button form__button--active" type="submit">отправить</button>
           </div>
-
+          <h3 class="form__captcha-caption">Капча</h3>
+          <div class="form__captcha-wrap">
+            <input class="form__captcha visually-hidden" type="checkbox" id="recaptcha" name="captcha" value="not-robot" checked>
+            <label for ="captcha" class="form__captcha-label">я не робот</label>
+            <p class="form__captcha-description">* поля для обязательного заполнения</p>
+          </div>
+          <div class="form__confirm-wrap">
+            <input class="form__confirm-checkbox visually-hidden" type="checkbox" id="confirm" name="confirm" value="confirm" checked>
+            <label for ="confirm" class="form__confirm-label">я подтверждаю согласие на обработку персональных данных и принимаю условия рассмотрения обращений *</label>
+          </div>
+          <button class="button form__button form__button--active" type="submit">отправить</button>
         </form>
         <div class="form__about-company">
           <h2 class="form__target-title">Наша суперцель</h2>

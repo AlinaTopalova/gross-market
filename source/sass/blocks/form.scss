@@ -50,7 +50,7 @@
   flex-direction: column;
 }
 
-.form__user label {
+.form label {
   display: block;
   font-size: 14px;
   font-weight: 500;
@@ -146,11 +146,11 @@ input, select, textarea {
   opacity: 0.3;
 }
 
-.form__birthday {
+.form__birthday-wrap {
   position: relative;
 }
 
-.form__birthday p {
+.form__birthday-wrap p {
   display: none;
   position: absolute;
   font-size: 14px;
@@ -182,7 +182,7 @@ input, select, textarea {
   padding: 0;
 }
 
-.form__gender legend {
+.form__gender-wrap legend {
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
